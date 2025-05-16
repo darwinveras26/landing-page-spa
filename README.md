@@ -1,4 +1,4 @@
-# ☕ Café Aroma Landing Page Template
+# ☕ Bella Spa Landing Page Template
 
 ## 📌 Project Overview
 This is a modern, responsive landing page template designed for **local businesses** like coffee shops, restaurants, spas, or retail stores. Built with pure HTML and CSS for easy customization.
