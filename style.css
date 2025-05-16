@@ -1,0 +1,136 @@
+:root {
+  --main-color: #a3c9a8;
+  --hover-color: #8fbf9f;
+  --background-color: #fdfdfd;
+  --text-color: #2c3e50;
+  --section-bg: #e8f5e9;
+  --btn-text-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.hero {
+  background: url('./images/spa-hero.jpg') center/cover no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.btn {
+  background-color: var(--main-color);
+  color: var(--btn-text-color);
+  padding: 12px 25px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+}
+
+.about {
+  background-color: var(--section-bg);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 15px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+.services {
+    background-color: var(--section-bg);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--main-color);
+}
+
+.service-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h3 {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    margin: 4px 0;
+    color: var(--text-color);
+}
+
+.price {
+    font-weight: bold;
+    color: var(--hover-color);
+    font-size: 1.1rem;
+}
